@@ -49,13 +49,13 @@ app.use(mongoSanitize({
     replaceWith: '_'
 }))
 
-const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
+const secret = process.env.SECRET || 'trombonesandwichpartychimney!';
 
 const store = MongoStore.create({
     mongoUrl: dbUrl,
     touchAfter: 24 * 3600,
     crypto: {
-        secret: 'thisshouldbeabettersecret'
+        secret: 'trombonesandwichpartychimney'
     }
 });
 
